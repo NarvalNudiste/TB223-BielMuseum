@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - LaserPointer
+  - Tableau
+  - Objective
+  - Floor
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - ignore_directional_light
+  - Ignore Light
+  - Post Process
+  - LaserPointer
+  - Picture_Holes_Raycast_Layer
+  - Tableau_Ignore_Raycast
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Peinture
+    uniqueID: 1678487837
+    locked: 0
+  - name: highlights
+    uniqueID: 1403987653
+    locked: 0
+  - name: Parties manquantes
+    uniqueID: 1923611789
+    locked: 0
+  - name: UI
+    uniqueID: 672668593
+    locked: 0

@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 8640932a77a56ac4c884351a61078fd5
+timeCreated: 1516379523
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: 1er_pivot
+    100002: "2\xE8me_Pivot"
+    100004: "3\xE8me_Pivot"
+    100006: Ampoule
+    100008: Base
+    100010: Branche_droite
+    100012: Branche_gauche
+    100014: Branches_bas
+    100016: Bras_droit
+    100018: Bras_gauche
+    100020: Cylinder_Base
+    100022: //RootNode
+    100024: Null
+    100026: SoutienPivot
+    100028: Sphere
+    100030: TrucQuiVaALaLampe
+    400000: 1er_pivot
+    400002: "2\xE8me_Pivot"
+    400004: "3\xE8me_Pivot"
+    400006: Ampoule
+    400008: Base
+    400010: Branche_droite
+    400012: Branche_gauche
+    400014: Branches_bas
+    400016: Bras_droit
+    400018: Bras_gauche
+    400020: Cylinder_Base
+    400022: //RootNode
+    400024: Null
+    400026: SoutienPivot
+    400028: Sphere
+    400030: TrucQuiVaALaLampe
+    2300000: 1er_pivot
+    2300002: "2\xE8me_Pivot"
+    2300004: "3\xE8me_Pivot"
+    2300006: Ampoule
+    2300008: Base
+    2300010: Branche_droite
+    2300012: Branche_gauche
+    2300014: Bras_droit
+    2300016: Bras_gauche
+    2300018: Cylinder_Base
+    2300020: SoutienPivot
+    2300022: Sphere
+    2300024: TrucQuiVaALaLampe
+    3300000: 1er_pivot
+    3300002: "2\xE8me_Pivot"
+    3300004: "3\xE8me_Pivot"
+    3300006: Ampoule
+    3300008: Base
+    3300010: Branche_droite
+    3300012: Branche_gauche
+    3300014: Bras_droit
+    3300016: Bras_gauche
+    3300018: Cylinder_Base
+    3300020: SoutienPivot
+    3300022: Sphere
+    3300024: TrucQuiVaALaLampe
+    4300000: Cylinder_Base
+    4300002: 1er_pivot
+    4300004: Branche_gauche
+    4300006: Branche_droite
+    4300008: "2\xE8me_Pivot"
+    4300010: Bras_droit
+    4300012: Bras_gauche
+    4300014: "3\xE8me_Pivot"
+    4300016: TrucQuiVaALaLampe
+    4300018: Sphere
+    4300020: Ampoule
+    4300022: SoutienPivot
+    4300024: Base
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 0
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

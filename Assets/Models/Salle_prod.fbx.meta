@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: 85a8f308acd04c24b9c84b1d7d124388
+timeCreated: 1516284690
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Murs
+    100002: Porte
+    100004: Porte_Instance
+    100006: //RootNode
+    100008: Sol
+    100010: Plafond
+    100012: Pleintes
+    100014: Prise
+    100016: Prise_1
+    100018: Landscape
+    100020: Landscape_1
+    100022: Landscape_2
+    100024: Landscape_3
+    100026: Porte_Instance_1
+    400000: Murs
+    400002: Porte
+    400004: Porte_Instance
+    400006: //RootNode
+    400008: Sol
+    400010: Plafond
+    400012: Pleintes
+    400014: Prise
+    400016: Prise_1
+    400018: Landscape
+    400020: Landscape_1
+    400022: Landscape_2
+    400024: Landscape_3
+    400026: Porte_Instance_1
+    2300000: Murs
+    2300002: Porte
+    2300004: Porte_Instance
+    2300006: Sol
+    2300008: Plafond
+    2300010: Pleintes
+    2300012: Prise
+    2300014: Prise_1
+    2300016: Landscape
+    2300018: Landscape_1
+    2300020: Landscape_2
+    2300022: Landscape_3
+    2300024: Porte_Instance_1
+    3300000: Murs
+    3300002: Porte
+    3300004: Porte_Instance
+    3300006: Sol
+    3300008: Plafond
+    3300010: Pleintes
+    3300012: Prise
+    3300014: Prise_1
+    3300016: Landscape
+    3300018: Landscape_1
+    3300020: Landscape_2
+    3300022: Landscape_3
+    3300024: Porte_Instance_1
+    4300000: Porte_Instance
+    4300002: Porte
+    4300004: Murs
+    4300006: Sol
+    4300008: Plafond
+    4300010: Prise
+    4300012: Pleintes
+    4300014: Prise_1
+    4300016: Landscape_3
+    4300018: Landscape_2
+    4300020: Landscape_1
+    4300022: Landscape
+    4300024: Porte_Instance_1
+    6400000: Landscape
+    6400002: Landscape_1
+    6400004: Landscape_2
+    6400006: Landscape_3
+    6400008: Murs
+    6400010: Plafond
+    6400012: Pleintes
+    6400014: Porte
+    6400016: Porte_Instance_1
+    6400018: Prise_1
+    6400020: Sol
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 0
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

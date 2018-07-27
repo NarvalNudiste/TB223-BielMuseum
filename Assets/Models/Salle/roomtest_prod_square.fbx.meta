@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: 8c3d6275c4e22eb4bbb2ae427f310e54
+timeCreated: 1519119395
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Cylinder
+    100002: Cylinder_2
+    100004: Cylinder_2_2
+    100006: Cylinder_3
+    100008: Floor
+    100010: Mur
+    100012: Mur_1
+    100014: Mur_1_2
+    100016: Mur_1_3
+    100018: Mur_1_4
+    100020: Mur_2
+    100022: Mur_3
+    100024: Mur_4
+    100026: Mur_group
+    100028: Mur_group_1
+    100030: Mur_group_2
+    100032: Mur_group_3
+    100034: Murs
+    100036: Plane
+    100038: Porte
+    100040: Porte_droite_1
+    100042: Porte_gauche
+    100044: //RootNode
+    100046: Plafond
+    100048: Sol
+    100050: All
+    100052: Cylinder_2_3
+    100054: Cylinder_4
+    100056: Cylinder_5
+    100058: Cylinder_6
+    100060: old
+    100062: Porte_droite
+    100064: Porte_gauche_1
+    100066: "Fen\xEAtre"
+    100068: Plafond_1
+    100070: Plafond_1_2
+    400000: Cylinder
+    400002: Cylinder_2
+    400004: Cylinder_2_2
+    400006: Cylinder_3
+    400008: Floor
+    400010: Mur
+    400012: Mur_1
+    400014: Mur_1_2
+    400016: Mur_1_3
+    400018: Mur_1_4
+    400020: Mur_2
+    400022: Mur_3
+    400024: Mur_4
+    400026: Mur_group
+    400028: Mur_group_1
+    400030: Mur_group_2
+    400032: Mur_group_3
+    400034: Murs
+    400036: Plane
+    400038: Porte
+    400040: Porte_droite_1
+    400042: Porte_gauche
+    400044: //RootNode
+    400046: Plafond
+    400048: Sol
+    400050: All
+    400052: Cylinder_2_3
+    400054: Cylinder_4
+    400056: Cylinder_5
+    400058: Cylinder_6
+    400060: old
+    400062: Porte_droite
+    400064: Porte_gauche_1
+    400066: "Fen\xEAtre"
+    400068: Plafond_1
+    400070: Plafond_1_2
+    2300000: Cylinder
+    2300002: Cylinder_2
+    2300004: Cylinder_2_2
+    2300006: Cylinder_3
+    2300008: Mur
+    2300010: Mur_1
+    2300012: Mur_1_2
+    2300014: Mur_1_3
+    2300016: Mur_1_4
+    2300018: Mur_2
+    2300020: Mur_3
+    2300022: Mur_4
+    2300024: Plane
+    2300026: Porte_droite_1
+    2300028: Porte_gauche
+    2300030: Plafond
+    2300032: Sol
+    2300034: Cylinder_2_3
+    2300036: Cylinder_4
+    2300038: Cylinder_5
+    2300040: Cylinder_6
+    2300042: Porte_droite
+    2300044: Porte_gauche_1
+    2300046: "Fen\xEAtre"
+    2300048: Plafond_1
+    2300050: Plafond_1_2
+    3300000: Cylinder
+    3300002: Cylinder_2
+    3300004: Cylinder_2_2
+    3300006: Cylinder_3
+    3300008: Mur
+    3300010: Mur_1
+    3300012: Mur_1_2
+    3300014: Mur_1_3
+    3300016: Mur_1_4
+    3300018: Mur_2
+    3300020: Mur_3
+    3300022: Mur_4
+    3300024: Plane
+    3300026: Porte_droite_1
+    3300028: Porte_gauche
+    3300030: Plafond
+    3300032: Sol
+    3300034: Cylinder_2_3
+    3300036: Cylinder_4
+    3300038: Cylinder_5
+    3300040: Cylinder_6
+    3300042: Porte_droite
+    3300044: Porte_gauche_1
+    3300046: "Fen\xEAtre"
+    3300048: Plafond_1
+    3300050: Plafond_1_2
+    4300000: Plane
+    4300002: Porte_gauche
+    4300004: Cylinder_2
+    4300006: Cylinder
+    4300008: Porte_droite_1
+    4300010: Cylinder_2_2
+    4300012: Cylinder_3
+    4300014: Mur
+    4300016: Mur_1
+    4300018: Mur_2
+    4300020: Mur_1_2
+    4300022: Mur_3
+    4300024: Mur_1_3
+    4300026: Mur_4
+    4300028: Mur_1_4
+    4300030: Sol
+    4300032: Plafond
+    4300034: Porte_gauche_1
+    4300036: Porte_droite
+    4300038: Cylinder_4
+    4300040: Cylinder_5
+    4300042: Cylinder_2_3
+    4300044: Cylinder_6
+    4300046: "Fen\xEAtre"
+    4300048: Plafond_1
+    4300050: Plafond_1_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 2
+    tangentImportMode: 2
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

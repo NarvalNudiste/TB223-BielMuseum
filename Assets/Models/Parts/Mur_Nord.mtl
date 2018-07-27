@@ -1,0 +1,23 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.197435470)
+
+newmtl Mur_Nord
+kd 0.8 0.8 0.8
+ka 1 1 1
+ks 1 1 1
+ke 0 0 0
+d 1
+Ns 200
+illum 2
+map_kd Mur_Nord_Color.tif
+
+newmtl Mur_Nord_Plinte
+kd 0.8 0.8 0.8
+ka 1 1 1
+ks 1 1 1
+ke 0 0 0
+d 1
+Ns 200
+illum 2
+map_kd Mur_Nord_Plinte_Color.tif
+
