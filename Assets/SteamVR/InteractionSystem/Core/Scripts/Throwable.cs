@@ -48,10 +48,13 @@ namespace Valve.VR.InteractionSystem
 
         private KeyObject keyObjectScript;
 
+        private GameManager gm;
+
 
 		//-------------------------------------------------
 		void Awake()
 		{
+            gm = GetComponent<GameManager>();
             keyObjectScript = GetComponent<KeyObject>();
             velocityEstimator = GetComponent<VelocityEstimator>();
 
@@ -117,7 +120,8 @@ namespace Valve.VR.InteractionSystem
 			attached = true;
 
             if (keyObjectScript != null) {
-                keyObjectScript.SetHeld();
+                keyObjectScript.currentHand = hand;
+                keyObjectScript.SetHeld(hand);
             }
 
             onPickUp.Invoke();
@@ -166,9 +170,10 @@ namespace Valve.VR.InteractionSystem
 
             // Modification of the OnDetachedFromHand method, disabling default behaviour of the throwable if 
             // an attempt was made
-            keyObjectScript.UnsetHeld();
-            KeyObject.ObjectState state = keyObjectScript.TryGoal();
 
+            KeyObject.ObjectState state = keyObjectScript.TryGoal();
+            keyObjectScript.currentHand = null;
+            keyObjectScript.UnsetHeld();
             //Default behaviour
             onDetachFromHand.Invoke();
 

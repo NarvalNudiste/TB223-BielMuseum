@@ -1,0 +1,2 @@
+Executable- Game executable
+Root folder - Full unity project including all assets, scenes and scripts, default game scene is "Scene_Integration_Tableau"

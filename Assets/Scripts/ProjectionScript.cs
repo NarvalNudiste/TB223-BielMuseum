@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class ProjectionScript : MonoBehaviour {
+    public Hand currentHand;
     public bool active = false;
     LineRenderer lr;
     public Transform targetSprite;
@@ -13,6 +15,8 @@ public class ProjectionScript : MonoBehaviour {
     float offset = 0.0f;
 
     private GameManager gm;
+
+    private float pointerLenghtFactor = 3.0f;
 
     public bool Active {
         get {
@@ -26,6 +30,7 @@ public class ProjectionScript : MonoBehaviour {
 
     // init
     void Start() {
+        currentHand = null;
         camera = GameObject.FindGameObjectWithTag("MainCamera");
         lr = GetComponent<LineRenderer>();
         instanciatedTarget = GameObject.Instantiate(targetSprite, this.transform.position, Quaternion.identity);
@@ -38,6 +43,7 @@ public class ProjectionScript : MonoBehaviour {
     // makes the line renderer appear (by increasing its size) and shows the sprite. 
     // If on a potential goal, activates its particles fx
     void Update() {
+        /* old
         if (Active && !gm.showCasingObject) {
             RaycastHit hit;
             if (Physics.Raycast(this.transform.position, Vector3.left, out hit)) {
@@ -62,6 +68,31 @@ public class ProjectionScript : MonoBehaviour {
         else {
             HidePointer();
         }
+        */
+        if (Active && !gm.showCasingObject && currentHand != null) {
+            RaycastHit hit;
+            if (Physics.Raycast(this.transform.position, currentHand.transform.forward, out hit)) {
+                if (hit.transform.gameObject != null && hit.distance < maxDistance) {
+                    if (hit.transform.gameObject.tag == "Tableau" || hit.transform.gameObject.tag == "Objective") {
+                        if (hit.transform.gameObject.tag == "Objective") {
+                            ParticleSystem currentParticleSystem = hit.transform.GetComponentInChildren<ParticleSystem>();
+                            currentParticleSystem.Emit(10);
+
+                        }
+                        Vector3 hitPosition = new Vector3(hit.point.x, hit.point.y, hit.point.z);
+                        //   Vector3[] positions = { this.transform.position, hitPosition };
+                        Vector3[] positions = { this.transform.position, hitPosition };
+                        ShowPointer(positions, hitPosition);
+                    }
+                } else {
+                    HidePointer();
+                }
+            } else {
+                HidePointer();
+            }
+        } else {
+            HidePointer();
+        }
     }
     // Shows the pointer
     public void ShowPointer(Vector3[] positions, Vector3 hitPosition) {
@@ -77,5 +108,9 @@ public class ProjectionScript : MonoBehaviour {
         lr.startWidth = 0.0f;
         lr.endWidth = 0.0f;
         instanciatedTarget.GetComponent<SpriteRenderer>().enabled = false;
+    }
+
+    void OnDrawGizmos() {
+        Gizmos.color = Color.yellow;
     }
 }

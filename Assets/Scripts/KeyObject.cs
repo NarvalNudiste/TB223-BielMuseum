@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Valve.VR.InteractionSystem;
 
 public class KeyObject : MonoBehaviour {
+
+    public Hand currentHand;
 
     public enum ObjectState {OnBadGoal, OnGoodGoal, NotOnGoal};
 
@@ -44,13 +47,18 @@ public class KeyObject : MonoBehaviour {
     private Vector3 animationStartVector;
     private Vector3 animationStopVector;
 
-    public void SetHeld() {
+    public void SetHeld(Hand hand) {
+        this.currentHand = hand;
         isHeld = true;
+        projectionScript.currentHand = hand;
         projectionScript.Active = true;
+
     }
     public void UnsetHeld() {
+        this.currentHand = null;
         isHeld = false;
         projectionScript.Active = false;
+        projectionScript.currentHand = null;
     }
 
     void Awake() {
@@ -116,6 +124,7 @@ public class KeyObject : MonoBehaviour {
             } 
         }
         //Detection by raycast
+        /* old 
         else if (Physics.Raycast(this.transform.position, Vector3.left, out hit, lm)) {
             if (hit.distance < rayCastDistance) {
                 Goal rayg = hit.transform.GetComponent<Goal>();
@@ -124,6 +133,25 @@ public class KeyObject : MonoBehaviour {
                         currentGoal = rayg;
                         Succeed();
                        // Destroy(this.gameObject); //demo purpose
+                        return ObjectState.OnGoodGoal;
+                    } else {
+                        Fail();
+                        return ObjectState.OnBadGoal;
+                    }
+                }
+            }
+        }
+        return ObjectState.NotOnGoal;
+        */
+        /* new */
+         else if (currentHand != null && Physics.Raycast(this.transform.position, currentHand.transform.forward, out hit, lm)) {
+            if (hit.distance < rayCastDistance) {
+                Goal rayg = hit.transform.GetComponent<Goal>();
+                if (rayg != null) {
+                    if (rayg.id == this.id && gm.showCasingObject == false) {
+                        currentGoal = rayg;
+                        Succeed();
+                        // Destroy(this.gameObject); //demo purpose
                         return ObjectState.OnGoodGoal;
                     } else {
                         Fail();
@@ -225,6 +253,7 @@ public class KeyObject : MonoBehaviour {
         return false;
     }
     void OnDrawGizmos() {
+
         if (drawGizmos) {
             Gizmos.color = Color.yellow;
             Gizmos.DrawSphere(transform.position, radius);

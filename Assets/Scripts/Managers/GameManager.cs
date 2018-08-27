@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Valve.VR.InteractionSystem;
 
 public class GameManager : MonoBehaviour {
     // QoL enums for the game state
@@ -39,6 +40,8 @@ public class GameManager : MonoBehaviour {
 
     public float defaultLaserPointerThickness = 0.01f;
 
+    private SpriteRenderer[] waitingSprites;
+
     public Language CurrentLang {
         get {
             return currentLang;
@@ -64,6 +67,7 @@ public class GameManager : MonoBehaviour {
     }
 
     void Awake() {
+        waitingSprites = GameObject.Find("WaitingSprites").GetComponentsInChildren<SpriteRenderer>();
         this.currentLang = Language.DE;
         hmdTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
         if (hmdTransform == null) {
@@ -123,6 +127,7 @@ public class GameManager : MonoBehaviour {
         // If an item is shown, we don't want the timer to continue increasing. This is done in fixed update for accuracy purposes
         if (!showCasingObject) {
             timer += Time.deltaTime;
+
         }
     }
 
@@ -191,6 +196,16 @@ public class GameManager : MonoBehaviour {
             foreach(Rigidbody r in rigidbodies) {
                 // Something was wrong so gotta make things explode
                 r.AddForce(new Vector3(Random.Range(0.0f, 5000.0f), Random.Range(0.0f, 5000.0f), Random.Range(0.0f, 5000.0f)));
+            }
+        }
+
+        if (showCasingObject) {
+            foreach(SpriteRenderer sr in waitingSprites){
+                sr.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+            }
+        } else {
+            foreach (SpriteRenderer sr in waitingSprites) {
+                sr.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
             }
         }
     }
